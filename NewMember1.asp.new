@@ -1,0 +1,60 @@
+
+<html>
+<head>
+</head>
+<BODY TEXT="#333333" LINK="#333333" VLINK="#333333" ALINK="#333333" bgcolor="white">
+<STYLE type=text/css>
+	p {text-align:justify;font-size: 10pt;font-family: "Verdana"; }
+	td {font-size: 8pt;font-family: "Verdana";color: "darkblue"; }
+	th {font-size: 8pt;font-family: "Verdana"; color: "black";}
+	a {font-size: 8pt;font-family: "Verdana"; color: "blue";}
+</STYLE>
+<CENTER>
+<Table width="50%" border=0 bordercolor="darkblue"><tr><td><center>
+
+<Table width="50%" cellpadding=0 cellspacing=0>
+<tr>
+<td align="right"><img src="needlework_a.gif" width="45" height="50" border=0></td><td align="left"><img src="needlework_b.gif" width="550" height="70" border=0></td>
+</tr>
+</table>
+
+</center></td></tr></table>
+
+<CENTER>
+<BR>
+<BR>
+<Font color="darkblue"><H4>Needlework Headquarters Membership Enrollment</H4></Font>
+<BR>
+<table bgcolor="lightyellow"><tr><td>
+<H5><Font color="red">Step 1:</Font> If paying by credit card, please click the payment button below and follow the payment instructions. The cost is $9.99 (USD) for a one year membership.
+<BR>
+Credit Card processing is facilitated through Verisign. Verisign uses a secure method of payment which employs 128-bit Secure Socket Layers (SSL).<BR><BR><Center> 
+
+<center>
+<form method="POST" action="https://payflowlink.verisign.com/payflowlink.cfm" name="paymentForm">
+<input type="hidden" name="LOGIN" value="passwordsupportdotcom">
+<input type="hidden" name="PARTNER" value="VeriSign">
+
+<input type="hidden" name="AMOUNT" value="9.99">
+<input type="hidden" name="TYPE" value="S">
+
+<input type="hidden" name="DESCRIPTION" value="NeedleWork HeadQuarters Membership">
+<input type="hidden" name="METHOD" value="CC">
+<input type="hidden" name="USER2" value="<%= ACTION_NWSIGNUP %>">
+
+<input type="image" src="x-click-butcc.gif" border="0" name="submit"> 
+
+</form>
+</center>
+<BR>
+
+
+
+</Center>
+For other payment arrangements (check or money order) <a href="OtherPaymentArrangements.asp">click here</a>
+</td></tr></table>
+
+</Center>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+# -FrontPage-
+AuthType Basic
+    
+Options None
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+require group authors administrators
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>

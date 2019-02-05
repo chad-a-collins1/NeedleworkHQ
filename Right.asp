@@ -1,0 +1,28 @@
+<html>
+<head>
+<SCRIPT language="javascript1.2">
+
+
+function refreshBoard()
+{
+window.open("Message_Brd.asp?UID=ccollins1", target="Mn");
+}
+
+</script>
+
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache"> 
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+
+
+<title>Right</title>
+</head>
+<body background="paper_old.gif" onLoad="refreshBoard()">
+</body>
+</html>
+
+
+<%
+Response.Redirect("Right.asp")
+%>
+
+

@@ -1,0 +1,14 @@
+To: needleworkhq@yahoo.com
+From: [required-youremail]
+Subject: Custom Pattern Order Info
+                                         
+Your first name:       [required-yourfname]
+Your last name:        [required-yourlname]
+Your email address:    [required-youremail]
+Your phone:            [required-yourphone]
+Your address:          [required-youraddress]
+Your city:             [required-yourcity]
+Your state province:   [required-yourstate]
+Your zip postal code:  [required-yourzip]
+Your country:          [required-yourcountry]
+

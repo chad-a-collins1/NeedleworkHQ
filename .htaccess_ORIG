@@ -1,0 +1,14 @@
+# -FrontPage
+-IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*      
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit POST PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthName www.crossstitchvillage.com
+AuthUserFile  /www.crossstitchvillage.com/www/_private/service.pwd
+AuthGroupFile /www.crossstitchvillage.com/www/_private/service.grp

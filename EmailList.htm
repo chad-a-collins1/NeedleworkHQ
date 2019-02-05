@@ -1,0 +1,169 @@
+<HTML>
+
+<HEAD>
+<TITLE>MustangHeaven Email List</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+
+<!-- *** STYLESHEET SECTION *** -->
+<!-- Change the border and text font/colour/size here, specified in ItemStyles below. -->
+<!-- Cut and paste this into your sitewide CSS file if you want - extra portability! -->
+<!-- Be inventive: text-align, etc, can often come in useful. Be sure to test in NS4! -->
+<style type="text/css">
+<!--
+
+.lowText { text-decoration: none; color: #000000; font: 12px Arial, Helvetica }
+.highText { text-decoration: none; color: #FFFFFF; font: 12px Arial, Helvetica }
+.itemBorder { border: 1px solid #666666 }
+.itemBorderBlank { border: 1px solid #CCCCDD }
+
+/* Delete these "button" styles if you're not using them */
+
+.buttonText { text-decoration: none; color: #FFCC99; font: Bold 12px Arial, Helvetica }
+.buttonHover { text-decoration: none; color: #99CCFF; font: Bold 12px Arial, Helvetica; padding: 1px }
+.buttonBorder { border: 1px outset #339966 }
+.buttonBorderOver { border: 1px inset #CC9966 }
+
+-->
+</style>
+
+</HEAD>
+
+<BODY>
+
+<TABLE cellSpacing=0 cellPadding=0 border=0 height=512 width=800>
+
+  <TR>
+  <TD align=left valign=top>
+  <TABLE cellSpacing=0 cellPadding=0 border=0 height=75 width=800>
+          <TR><TD valign=top align=center><img src="Pics\mh_title.gif" height=67></TR>
+ </TABLE>
+  </TD>
+  </TR>
+  
+  <TR>
+   <TD><HR color=blue></TD>
+  </TR>
+  
+<TR>   
+<TD align=left valign=top>       
+<TABLE cellSpacing=0 cellPadding=0 border=0 height=350 width=800>
+   <TR>
+     <TD align=left valign=top width=165>
+
+     </TD>
+     <TD align=left valign=top>
+        <TABLE cellSpacing=0 cellPadding=5 border=0 height=350 width=600 bgcolor=WHITE>
+        <TR>
+        <!--#6699CC -->
+           <TD bgcolor=#CCCCDD valign=center align=center>
+               <FORM action="JoinEmailList.asp?v=5" method="post" onsubmit="return Form1_Validator(this)" name="Form1">
+                    <TABLE >
+                      <TR>
+                          <TD colspan=2 align=center>
+                             <FONT size=4 color=BLUE FACE="Times New Roman"><b>MustangHeaven.com Email News!</b><Font><br>
+          
+                          </TD>
+                      </TR>
+                    <TR>
+                        <TD ALIGN=right>Your Email Address:</TD>
+                        <TD><input type="text"
+                                   name="txtEmail"
+                                   value=""
+                                   size ="25"
+                                   maxlength =75"></TD>
+                                   
+                    </TR>
+                
+                    <TR>
+                        <TD ALIGN=center COLSPAN=2>
+                        <input type="submit" name="cmdSubmit" value="UNSUBSCRIBE"> &nbsp;&nbsp;
+                        <input type="submit" name="cmdSubmit" value="SUBSCRIBE">
+                        </TD> 
+                    </TR>
+                    </TABLE>
+               </FORM>
+               
+                </TD>      
+        </TR>
+        </TABLE>
+     </TD>
+   </TR>
+</TABLE>
+</TD>
+</TR>
+
+  <TR>
+   <TD><HR color=blue></TD>
+  </TR>
+
+   <TR>
+  <TD colspan=3><center><FONT size=2><BR>MustangHeaven.com.</FONT></center>
+  </TR>
+
+</TABLE>
+
+
+</BODY>
+</HTML>
+
+
+
+<script Language="JavaScript">
+<!--
+function Form1_Validator(theForm)
+{
+
+var alertsay = ""; // define for long lines
+
+
+
+// check if email field is blank
+if (theForm.txtEmail.value == "")
+{
+alert("Please enter a value for the \"Email\" field.");
+theForm.txtEmail.focus();
+return (false);
+}
+
+
+// test if valid email address, must have @ and .
+var checkEmail = "@.";
+var checkStr = theForm.txtEmail.value;
+var EmailValid = false;
+var EmailAt = false;
+var EmailPeriod = false;
+for (i = 0;  i < checkStr.length;  i++)
+{
+ch = checkStr.charAt(i);
+for (j = 0;  j < checkEmail.length;  j++)
+{
+if (ch == checkEmail.charAt(j) && ch == "@")
+EmailAt = true;
+if (ch == checkEmail.charAt(j) && ch == ".")
+EmailPeriod = true;
+	  if (EmailAt && EmailPeriod)
+		break;
+	  if (j == checkEmail.length)
+		break;
+	}
+	// if both the @ and . were in the string
+if (EmailAt && EmailPeriod)
+{
+		EmailValid = true
+		break;
+	}
+}
+if (!EmailValid)
+{
+alert("The \"email\" field must contain an \"@\" and a \".\".");
+theForm.txtEmail.focus();
+return (false);
+}
+
+
+
+return (true);
+
+}
+//--></script>
